@@ -17,11 +17,11 @@ namespace BMICalculator
                 Console.WriteLine("This program is only for people between the ages of 20-60.");
                 Environment.Exit(0);
             }
-            Console.WriteLine("Enter your height in cm: ");
-            int userHeight = Int32.Parse(Console.ReadLine());
+            Console.WriteLine("Enter your height in meters (use a comma): ");
+            double userHeight = Double.Parse(Console.ReadLine());
 
             Console.WriteLine("Enter your weight in kg: ");
-            int userWeight = Int32.Parse(Console.ReadLine()) * 10000;
+            int userWeight = Int32.Parse(Console.ReadLine());
 
             double userBMI = (userWeight / (userHeight * userHeight));
             
