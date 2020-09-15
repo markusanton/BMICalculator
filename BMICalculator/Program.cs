@@ -25,7 +25,6 @@ namespace BMICalculator
 
             double userBMI = (userWeight / (userHeight * userHeight));
             
-
             if (userBMI < 19)
             {
                 Console.WriteLine($"{userName}, Your BMI is {userBMI}, you are underweight.");
